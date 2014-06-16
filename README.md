@@ -2,8 +2,7 @@
 
 Example Usage:
 
-    include 's3file::curl'
     s3file { '/path/to/destination/file':
-      source => 'MyBucket/the/file',
+      source => 'object_storage/the/file',
       ensure => 'latest',
     }
